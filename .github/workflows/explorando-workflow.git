@@ -1,0 +1,18 @@
+name: Detalhes do Workflow
+on:
+  workflow_dispatch:
+jobs:
+  workflow-info:
+    name: Job para exibir detalhes do workflow
+    runs-on: ubuntu-latest
+    env: 
+      HELLO_WORLD: "Hello, World!"
+    steps:
+      - name: Print Hello World
+        run: echo "${{ env.HELLO_WORLD }}
+      
+      - name: Show GitHub Context
+        run: |
+          echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
+          echo "${{ toJson(github) }}"
+      
