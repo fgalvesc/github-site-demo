@@ -9,7 +9,7 @@ jobs:
       HELLO_WORLD: "Hello, World!"
     steps:
       - name: Print Hello World
-        run: echo "${{ env.HELLO_WORLD }}
+        run: echo "${{ env.HELLO_WORLD }}"
       
       - name: Show GitHub Context
         run: |
