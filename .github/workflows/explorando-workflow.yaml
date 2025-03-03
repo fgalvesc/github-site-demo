@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   workflow-info:
-    name: Job para exibir detalhes do workflow
+    #name: Job para exibir detalhes do workflow
     runs-on: ubuntu-latest
     env: 
       HELLO_WORLD: "Hello, World!"
